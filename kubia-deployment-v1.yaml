@@ -2,10 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kubia
-  selector:
-    app: kubia
 spec:
   replicas: 3
+  selector:
+    app: kubia
   template:
     metadata:
       name: kubia
