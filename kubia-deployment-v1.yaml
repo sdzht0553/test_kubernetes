@@ -5,7 +5,8 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: kubia
+    matchLabels:
+      app: kubia
   template:
     metadata:
       name: kubia
